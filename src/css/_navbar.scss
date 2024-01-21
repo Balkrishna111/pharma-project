@@ -1,0 +1,109 @@
+@import "./config";
+@import "./mediaquery";
+.main-nav-container {
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+
+  .navbar {
+    width: 100vw;
+    padding: 20px 20px;
+    background-color: $navbar-bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-container {
+      margin-right: 50px;
+    }
+
+    .list-container {
+      display: block;
+      @include md {
+        display: none;
+      }
+      width: 100%;
+      .list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .nav-links-ul {
+          width: 60%;
+          display: flex;
+          justify-content: space-around;
+          list-style: none;
+        }
+        .nav-login-ul {
+          width: 30%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          list-style: none;
+          .green-btn {
+            margin-left: 20px;
+            background-color: rgb(75, 124, 75);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .slide-navbar {
+    .hamburger {
+      display: none;
+      position: absolute;
+      margin-right: 20px;
+      right: 0;
+      top: 10px;
+      @include md {
+        display: block;
+      }
+    }
+
+    .slide-bar {
+      transform: translateX(100%);
+      transition: all ease-in 0.4s;
+      height: 98vh;
+      width: 98vw;
+      background-color: $ratingbar-bg;
+      position: fixed;
+      top: 0;
+      right: 0;
+      .slide-bar-nav {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .slide-bar-ul {
+        padding-right: 20px;
+        li {
+          margin-left: 20px;
+          list-style: none;
+          color: white;
+          hr {
+            margin: 10px 0;
+            background-color: black;
+          }
+          .green-btn {
+            background-color: rgb(71, 118, 71);
+            width: 100%;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            padding: 10px;
+            color: white;
+          }
+        }
+      }
+    }
+    .slide-nav-toggle {
+      transform: translateX(0%);
+    }
+  }
+}

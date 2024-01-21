@@ -1,0 +1,13 @@
+@import "./config";
+@import "./navbar";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+}

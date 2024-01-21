@@ -1,0 +1,117 @@
+.main-nav-container {
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+.main-nav-container .navbar {
+  width: 100vw;
+  padding: 20px 20px;
+  background-color: #f4ede8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav-container .navbar .logo-container {
+  margin-right: 50px;
+}
+.main-nav-container .navbar .list-container {
+  display: block;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .main-nav-container .navbar .list-container {
+    display: none;
+  }
+}
+.main-nav-container .navbar .list-container .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.main-nav-container .navbar .list-container .list .nav-links-ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.main-nav-container .navbar .list-container .list .nav-login-ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.main-nav-container .navbar .list-container .list .nav-login-ul .green-btn {
+  margin-left: 20px;
+  background-color: rgb(75, 124, 75);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+.main-nav-container .slide-navbar .hamburger {
+  display: none;
+  position: absolute;
+  margin-right: 20px;
+  right: 0;
+  top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .main-nav-container .slide-navbar .hamburger {
+    display: block;
+  }
+}
+.main-nav-container .slide-navbar .slide-bar {
+  transform: translateX(100%);
+  transition: all ease-in 0.4s;
+  height: 98vh;
+  width: 98vw;
+  background-color: #624156;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.main-nav-container .slide-navbar .slide-bar .slide-bar-nav {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav-container .slide-navbar .slide-bar .slide-bar-ul {
+  padding-right: 20px;
+}
+.main-nav-container .slide-navbar .slide-bar .slide-bar-ul li {
+  margin-left: 20px;
+  list-style: none;
+  color: white;
+}
+.main-nav-container .slide-navbar .slide-bar .slide-bar-ul li hr {
+  margin: 10px 0;
+  background-color: black;
+}
+.main-nav-container .slide-navbar .slide-bar .slide-bar-ul li .green-btn {
+  background-color: rgb(71, 118, 71);
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+}
+.main-nav-container .slide-navbar .slide-nav-toggle {
+  transform: translateX(0%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
